@@ -1,15 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import IconCircle from './IconCircle';
+import { StyledH3 } from '../Styles/Typography';
 
 const StyledPlanDetails = styled.div`
   background: #31708f;
   color: white;
   padding: 2rem;
-`;
-
-const StyledTitle = styled.h3`
-  margin: 0;
 `;
 
 const StyledItalics = styled.p`
@@ -32,7 +29,7 @@ const Separator = styled.div`
 
 const PlanDetails = () => (
   <StyledPlanDetails>
-    <StyledTitle>Freelancer</StyledTitle>
+    <StyledH3>Freelancer</StyledH3>
     <PriceComponent price="99" />
     <StyledItalics>Automatically renews after 1 year</StyledItalics>
     <BulletList />

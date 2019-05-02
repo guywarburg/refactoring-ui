@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Input from './Input';
 import IconCircle from './IconCircle';
 import PlanDetails from './PanelDetails';
+import { StyledH2, StyledH3 } from '../Styles/Typography';
 
 const StyledBody = styled.div`
   display: flex;
@@ -40,44 +41,14 @@ class Body extends Component {
 export default Body;
 
 const StyledCheckoutHeader = styled.div`
-  padding: 40px;
+  padding: 0 40px;
   border-bottom: #f5f7fa 2px solid;
-  h2 {
-    margin: 0;
-    padding: 0;
-    font-family: lato, sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-  }
 `;
 
 const StyledFormSection = styled.div`
-  padding: 2rem 3rem;
+  padding: 0 3rem;
   border-bottom: #f5f7fa 2px solid;
-`;
-
-const SectionTitle = styled.h3`
-  margin: 0;
-  margin-bottom: 1em;
-  padding: 0;
-  font-family: lato, sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-`;
-
-interface IFlex {
-  justifyContent?: string;
-  alignItems?: string;
-  wrap?: string;
-  direction?: string;
-}
-
-const StyledFlex = styled.div<IFlex>`
-  display: flex;
-  flex-wrap: ${props => props.wrap || 'no-wrap'};
-  justify-content: ${props => props.justifyContent || 'flex-start'};
-  align-items: ${props => props.justifyContent || 'auto'};
-  flex-direction: ${props => props.direction || 'auto'};
+  padding-bottom: 2rem;
 `;
 
 const StyledGrid = styled.div`
@@ -93,13 +64,13 @@ const StyledFullRow = styled.div`
 const Checkout = () => (
   <div>
     <StyledCheckoutHeader>
-      <h2>Checkout</h2>
+      <StyledH2>Checkout</StyledH2>
     </StyledCheckoutHeader>
     <StyledFormSection>
-      <SectionTitle>
+      <StyledH3>
         <IconCircle text="1" />
         Your Basic Information
-      </SectionTitle>
+      </StyledH3>
       <StyledGrid>
         <Input
           name="firstName"
@@ -125,10 +96,10 @@ const Checkout = () => (
       </StyledGrid>
     </StyledFormSection>
     <StyledFormSection>
-      <SectionTitle>
+      <StyledH3>
         <IconCircle text="2" />
         Your Payment Information
-      </SectionTitle>
+      </StyledH3>
       <Input
         name="creditCard"
         type="text"

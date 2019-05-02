@@ -15,3 +15,14 @@ Have a StoryBook example of the working prats.
 Decide - either utility classes / components or a color creator
 
 color creator -> insert base color and it will give you 9 shades you can copy/paste
+
+27th of april
+I finally finished my first draft. as it is a first draft it's still horrible. it resembles what I want to have but design still isn't 100% there. However, I wanted to have something instead of nothing.
+
+Now that I "suffered" a bit with this I have a better idea of what I what to have. I'm going to start take apart the design from an atomic point of view and see if that models nicely into styled components. I might have to revert to utility classes but let's see how it goes.
+
+For this stage, I'll try to refactor elements into smaller building blocks. I'll try to improve the types used and add some reusability. I'll build components such as Typography, Inputs, Buttons, Link and maybe try some layouts. My biggest "fear" going into this is how I'll handle layout. We'll see.
+
+2nd May
+I Added `StyledH2` and `StyledH3` and started to play with shared typography. So far seems nice. After each run like this I will need to check the spacing in the layout.
+*Stopped at h3, need to finish typography before I continue.
