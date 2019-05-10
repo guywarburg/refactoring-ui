@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { StyledLabel } from '../Styles/Typography';
 
-interface IStyledLabel {
-  maxWidth?: string;
-}
 const StyledInput = styled.input`
   border: none;
   border-radius: 8px;
@@ -15,15 +13,6 @@ const StyledInput = styled.input`
   margin-top: 0.6em;
   width: 100%;
   box-sizing: border-box;
-`;
-
-const StyledLabel = styled.label<IStyledLabel>`
-  font-family: lato, sans-serif;
-  display: block;
-  color: #1d2c3c;
-  font-size: 1rem;
-  margin: 1em 0;
-  max-width: ${props => props.maxWidth || ''};
 `;
 
 export interface IInput {

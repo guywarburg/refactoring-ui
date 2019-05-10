@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const StyledHeader = styled.div`
+import { StyledPrimaryButton, StyledSecondaryButton } from '../Styles/Buttons';
+
+const HeaderLayout = styled.div`
   height: 73px;
   width: 100%;
-  border-bottom: 2px solid #e0e6ea;
+  border-bottom: 2px solid ${props => props.theme.grey200};
 
   display: flex;
   align-items: center;
@@ -13,47 +15,48 @@ const StyledHeader = styled.div`
   }
 `;
 
-const StyledSecondaryButton = styled.button`
-  border: none;
-  background: transparent;
-  height: auto;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0 1.2rem;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.6;
-  }
-`;
-
-const StyledPrimaryButton = styled.button`
-  border: 2px solid #646e7a;
-  color: #1d2c3c;
-  height: 40px;
-  border-radius: 3px;
-  background: transparent;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0 1.1rem;
-  &:hover {
-    opacity: 0.6;
-  }
-`;
-
-class Header extends Component {
-  render() {
-    return (
-      <StyledHeader>
-        <div className="logo">WP PUSHER</div>
-        <StyledSecondaryButton>Download</StyledSecondaryButton>
-        <StyledSecondaryButton>Learn More</StyledSecondaryButton>
-        <StyledSecondaryButton>Pricing</StyledSecondaryButton>
-        <StyledSecondaryButton>Help</StyledSecondaryButton>
-        <StyledPrimaryButton>Account</StyledPrimaryButton>
-      </StyledHeader>
-    );
-  }
+interface IRoute {
+  label: string;
+  url: string;
 }
+
+const ROUTES: IRoute[] = [
+  {
+    label: 'Download',
+    url: '/download'
+  },
+  {
+    label: 'Learn More',
+    url: '/learn-more'
+  },
+  {
+    label: 'Pricing',
+    url: '/pricing'
+  },
+  {
+    label: 'Help',
+    url: '/help'
+  }
+];
+
+const Header = () => {
+  const navigate = (route: IRoute) => {
+    window.alert(`clicked route ${route.label}`);
+  };
+  const login = () => {
+    window.alert(`login`);
+  };
+  return (
+    <HeaderLayout>
+      <div className="logo">WP PUSHER</div>
+      {ROUTES.map(route => (
+        <StyledSecondaryButton onClick={() => navigate(route)}>
+          {route.label}
+        </StyledSecondaryButton>
+      ))}
+      <StyledPrimaryButton onClick={login}>Account</StyledPrimaryButton>
+    </HeaderLayout>
+  );
+};
 
 export default Header;

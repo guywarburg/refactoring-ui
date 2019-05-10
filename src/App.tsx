@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
+import theme from './Styles/Theme';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -14,12 +15,14 @@ const GlobalStyles = createGlobalStyle`
 class App extends Component {
   render() {
     return (
-      <div>
-        <GlobalStyles />
-        <Header />
-        <Body />
-        <Footer />
-      </div>
+      <ThemeProvider theme={theme}>
+        <div>
+          <GlobalStyles />
+          <Header />
+          <Body />
+          <Footer />
+        </div>
+      </ThemeProvider>
     );
   }
 }

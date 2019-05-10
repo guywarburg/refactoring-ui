@@ -26,3 +26,11 @@ For this stage, I'll try to refactor elements into smaller building blocks. I'll
 2nd May
 I Added `StyledH2` and `StyledH3` and started to play with shared typography. So far seems nice. After each run like this I will need to check the spacing in the layout.
 *Stopped at h3, need to finish typography before I continue.
+
+8th May
+I Started by going in the Typography route but felt a bit like a dead end. So I moved to a top bottom approach and decided to refactor the whole app trying to think of data flow and the best way to split the components.
+I think that the next step is to actually build the data flow and expand the functionality of the components and see what else I can split out.
+After that maybe add a StoryBook? We'll see.
+
+10th May
+Tiny refactor to complete previous step and start with data flow. I think I'll try to use only hooks (next project I'll try mobx).
