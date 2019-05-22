@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface IPriceDisplay {
-  price: string;
+  price: number;
 }
 
 const PriceLayout = styled.div`

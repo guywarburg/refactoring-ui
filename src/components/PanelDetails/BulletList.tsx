@@ -11,7 +11,7 @@ const StyledList = styled.ul`
   list-style-type: none;
 `;
 
-interface IBulletList {
+export interface IBulletList {
   bullets: IBulletItem[];
 }
 

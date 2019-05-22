@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CurrentPlan from './CurrentPlan';
 import SwitchAccount from './SwitchAccount';
 import UserQuote from './UserQuote';
+import { IBulletList } from './BulletList';
 
 const PlanDetailsLayout = styled.div`
   background: ${props => props.theme.blue300};
@@ -19,11 +20,50 @@ const Separator = styled.div`
   margin: 3rem 0;
 `;
 
-const PlanDetails = () => {
+interface IPlanDetails {
+  currentPlan: ICurrentPlan;
+  nextPlan: INextPlan;
+}
+export interface ICurrentPlan extends IBulletList {
+  name: string;
+  price: number;
+}
+
+export interface INextPlan {
+  name: string;
+  amountOfClients: number;
+}
+
+const PlanDetails: React.FunctionComponent = () => {
+  const planDetails: IPlanDetails = {
+    currentPlan: {
+      name: 'Freelancer',
+      price: 99,
+      bullets: [
+        {
+          name: 'Use on 5 client sites'
+        },
+        {
+          name: 'Private repositories'
+        },
+        {
+          name: 'Email support'
+        }
+      ]
+    },
+    nextPlan: {
+      amountOfClients: 20,
+      name: 'Agency'
+    }
+  };
+  const handleAccountSwitch = () => {
+    // todo
+  };
+  const { currentPlan, nextPlan } = planDetails;
   return (
     <PlanDetailsLayout>
-      <CurrentPlan />
-      <SwitchAccount />
+      <CurrentPlan {...currentPlan} />
+      <SwitchAccount {...nextPlan} onClick={handleAccountSwitch} />
       <Separator />
       <UserQuote />
     </PlanDetailsLayout>

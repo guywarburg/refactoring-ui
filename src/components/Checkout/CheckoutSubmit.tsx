@@ -11,10 +11,18 @@ const CheckoutSubmitLayout = styled.div`
   margin: 3rem;
 `;
 
-const CheckoutSubmit = () => {
+interface ICheckoutSubmit {
+  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+
+const CheckoutSubmit: React.FunctionComponent<ICheckoutSubmit> = ({
+  onClick
+}) => {
   return (
     <CheckoutSubmitLayout>
-      <StyledCheckoutButton>Buy WP Pusher</StyledCheckoutButton>
+      <StyledCheckoutButton onClick={onClick}>
+        Buy WP Pusher
+      </StyledCheckoutButton>
       <NeedHelp />
       <Badge text="powered by" strongText="stripe" />
     </CheckoutSubmitLayout>

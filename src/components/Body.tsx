@@ -11,17 +11,15 @@ const BodyLayout = styled.div`
   padding-top: 85px;
 `;
 
-class Body extends Component {
-  render() {
-    return (
-      <BodyLayout>
-        <Card>
-          <Checkout />
-          <PlanDetails />
-        </Card>
-      </BodyLayout>
-    );
-  }
-}
+const Body: React.FunctionComponent = () => {
+  return (
+    <BodyLayout>
+      <Card>
+        <Checkout />
+        <PlanDetails />
+      </Card>
+    </BodyLayout>
+  );
+};
 
 export default Body;

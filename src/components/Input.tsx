@@ -21,6 +21,8 @@ export interface IInput {
   placeholder: string;
   label: string;
   maxWidth?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
 }
 
 const Input: React.FunctionComponent<IInput> = ({

@@ -34,3 +34,23 @@ After that maybe add a StoryBook? We'll see.
 
 10th May
 Tiny refactor to complete previous step and start with data flow. I think I'll try to use only hooks (next project I'll try mobx).
+Started and worked a bit (maybe add more later)
+
+12th May
+I'll continue with adding data layers in the following fashion:
+- I'll add a form context and use the useContext hook and see how it goes.
+- I'll add an effect to the input fields to display different states
+- Possibly add a toaster mechanism
+- create storybook
+- publish to github
+
+May 16th
+Started playing around with state.
+Currently tried to split state into smaller components but not sure it's worth it. Got quite a bit of duplication and still thinking what is the best way to handle the data flow.
+Although I planned to use useContext I eventually used useState. Might be able to reduce the amount on duplication if I useContext
+
+May ??
+Implemented a fully functional app using useState. it's isn't the best option but it works.
+I feel like this is taking too long and I need to move forward so this should be good enough.
+I'll try to add more states to the input component and validators.
+
