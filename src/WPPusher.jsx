@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
@@ -12,19 +13,15 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <div>
-          <GlobalStyles />
-          <Header />
-          <Body />
-          <Footer />
-        </div>
-      </ThemeProvider>
-    );
-  }
-}
+const WPPusher = ({ store, view }) => (
+  <ThemeProvider theme={theme}>
+    <div>
+      <GlobalStyles />
+      <Header />
+      <Body />
+      <Footer />
+    </div>
+  </ThemeProvider>
+);
 
-export default App;
+export default WPPusher;

@@ -1,5 +1,3 @@
-import baseStyled, { ThemedStyledInterface } from 'styled-components';
-
 const theme = {
   white: '#ffffff',
   grey100: '#f5f7fa',
