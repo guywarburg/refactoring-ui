@@ -61,3 +61,7 @@ Maybe I'll try to fake loading states in the next ui and see how that works.
 I still need to put my ass down and finish the storybook for the first project.
 
 p.s. (note-to-self) I still need to re-structure the files, add types back and probably do some cleanup
+
+June 9th
+Yay!! I finally finished the WPPusher. That means I restructured the folders, added easier imports and most importantly I added storybook for all reusable components. I also added my own title and emoji favicon :)
+I also started to read about options to deploy the site alongside the storybook (have some ideas) but I think that first I'll complete all 3 sites and deploy it all as a finished piece.
