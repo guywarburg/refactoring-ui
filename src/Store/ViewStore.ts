@@ -9,7 +9,7 @@ interface ICurrentView {
 class ViewStore {
   fetch: IFetch | null = null;
 
-  @observable currentView: ICurrentView | null = { name: '/' };
+  @observable currentView: ICurrentView | null = null;
 
   constructor(fetch: IFetch) {
     this.fetch = fetch;
@@ -21,7 +21,7 @@ class ViewStore {
     }
     switch (this.currentView.name) {
       case 'wppusher':
-        return '/wppusher/';
+        return '/wppusher';
       case 'home':
         return '/';
       default:

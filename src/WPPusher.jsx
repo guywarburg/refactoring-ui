@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const WPPusher = ({ store, view }) => (
+const WPPusher = () => (
   <ThemeProvider theme={theme}>
     <div>
       <GlobalStyles />
