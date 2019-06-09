@@ -3,7 +3,7 @@ import React from 'react';
 import { StyledH3, StyledItalics } from '../../Styles/Typography';
 
 import PriceDisplay from './PriceDisplay';
-import BulletList from './BulletList';
+import BulletList from '../../Styles/BulletList';
 import { ICurrentPlan } from './PanelDetails';
 
 const CurrentPlan: React.FunctionComponent<ICurrentPlan> = ({

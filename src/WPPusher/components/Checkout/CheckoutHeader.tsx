@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StyledH2 } from '../../Styles/Typography';
+import { Typography } from '../../Styles';
 
 interface ICheckoutHeader {
   title: string;
@@ -14,10 +14,13 @@ const CheckoutHeaderLayout = styled.div`
 
 const CheckoutHeader: React.FunctionComponent<ICheckoutHeader> = ({
   title
-}) => (
-  <CheckoutHeaderLayout>
-    <StyledH2>{title}</StyledH2>
-  </CheckoutHeaderLayout>
-);
+}) => {
+  const { StyledH2 } = Typography;
+  return (
+    <CheckoutHeaderLayout>
+      <StyledH2>{title}</StyledH2>
+    </CheckoutHeaderLayout>
+  );
+};
 
 export default CheckoutHeader;

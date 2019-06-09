@@ -1,7 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import styled from 'styled-components';
-import WPPusher from './WPPusher';
+import WPPusher from './WPPusher/WPPusher';
 
 const RouteLayout = styled.div`
   display: grid;

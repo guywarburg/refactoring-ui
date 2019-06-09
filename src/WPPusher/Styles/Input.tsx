@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledLabel } from '../Styles/Typography';
+import { StyledLabel } from './Typography';
 
 const StyledInput = styled.input`
   border: none;

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Card from '../Styles/Card';
+import Card from '../../Styles/Card';
 
-import Checkout from './Checkout/Checkout';
-import PlanDetails from './PanelDetails/PanelDetails';
+import Checkout from '../Checkout/Checkout';
+import PlanDetails from '../PanelDetails/PanelDetails';
 
 const BodyLayout = styled.div`
   display: flex;

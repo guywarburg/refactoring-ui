@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import CurrentPlan from './CurrentPlan';
 import SwitchAccount from './SwitchAccount';
 import UserQuote from './UserQuote';
-import { IBulletList } from './BulletList';
+import { IBulletList } from '../../Styles/BulletList';
 
 const PlanDetailsLayout = styled.div`
   background: ${props => props.theme.blue300};

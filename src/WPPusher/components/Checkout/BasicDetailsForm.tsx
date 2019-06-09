@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { FormSection } from './common';
-import Input from '../Input';
+import { FormSection, Input } from '../../Styles';
 
 const GridLayout = styled.div`
   display: grid;

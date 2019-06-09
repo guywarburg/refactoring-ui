@@ -35,5 +35,9 @@ const StyledCheckoutButton = styled.button`
   padding: 0.8em 1.5rem;
   font-weight: bold;
   font-size: 1.125rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
 `;
 export { StyledPrimaryButton, StyledSecondaryButton, StyledCheckoutButton };

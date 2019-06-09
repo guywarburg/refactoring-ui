@@ -1,9 +1,9 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import Header from './components/Header';
-import Body from './components/Body';
-import Footer from './components/Footer';
+import Header from './components/Containers/Header';
+import Body from './components/Containers/Body';
+import Footer from './components/Containers/Footer';
 import theme from './Styles/Theme';
 
 const GlobalStyles = createGlobalStyle`

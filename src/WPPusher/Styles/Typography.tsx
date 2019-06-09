@@ -47,11 +47,28 @@ const StyledQuote = styled.blockquote`
   font-size: 1.2rem;
 `;
 
+const StyledLink = styled.a`
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 4px solid ${props => props.theme.blue100};
+    position: relative;
+    top: -2px;
+    opacity: 0.7;
+  }
+`;
+
 export {
   StyledH2,
   StyledH3,
   StyledLabel,
   StyledItalics,
   StyledBoldItalic,
-  StyledQuote
+  StyledQuote,
+  StyledLink
 };

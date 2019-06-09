@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StyledCheckoutButton } from '../../Styles/Buttons';
-import { Badge, NeedHelp } from './common';
+import { Badge, Buttons } from '../../Styles';
+import { NeedHelp } from './NeedHelp';
 
 const CheckoutSubmitLayout = styled.div`
   display: flex;
@@ -18,6 +18,7 @@ interface ICheckoutSubmit {
 const CheckoutSubmit: React.FunctionComponent<ICheckoutSubmit> = ({
   onClick
 }) => {
+  const { StyledCheckoutButton } = Buttons;
   return (
     <CheckoutSubmitLayout>
       <StyledCheckoutButton onClick={onClick}>

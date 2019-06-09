@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { StyledQuote } from '../../Styles/Typography';
-import Avatar from './Avatar';
+import { Avatar } from '../../Styles';
 
 const UserQuote = () => (
   <React.Fragment>

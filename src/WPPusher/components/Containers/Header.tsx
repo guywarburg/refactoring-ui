@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StyledPrimaryButton, StyledSecondaryButton } from '../Styles/Buttons';
+import {
+  StyledPrimaryButton,
+  StyledSecondaryButton
+} from '../../Styles/Buttons';
 
 const HeaderLayout = styled.div`
   height: 73px;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-import { FormSection } from './common';
-import Input from '../Input';
+import { Input, FormSection } from '../../Styles';
 
 interface IStripeCheckout {
   updateParent: (a: string) => void;
