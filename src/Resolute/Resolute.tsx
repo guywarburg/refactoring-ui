@@ -4,6 +4,8 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
 import Header from './components/Header';
 import { Sidebar } from './components/Sidebar';
+import { ResoluteStore } from './store/ResoluteStore';
+import { mockFetch } from './store/fetch';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -17,6 +19,8 @@ const Layout = styled.div`
   grid-template-columns: 220px 1fr 30px;
   grid-template-rows: 76px calc(100vh - 76px);
 `;
+
+const resoluteStore = new ResoluteStore(mockFetch);
 
 const Resolute = () => (
   <ThemeProvider theme={theme}>

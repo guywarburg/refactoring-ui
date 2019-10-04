@@ -82,3 +82,7 @@ Next:
 - move all stubs to store and have a dedicated resolute store.
 - separate app / layout from the properties domain and start implementing it (with it's dedicated store).
 - flow idea: get necessary assets from design, make stubs and store that serves it, storybook from page down to atoms.
+
+### October 4th - later
+Started working on a store that will load the data asynchronously. Started filling out all the necessary function for the infrastructure. Got a bit tired as it's a lot of manual work. I'll continue later.
+Still have leftovers ^
