@@ -2,6 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import styled from 'styled-components';
 import WPPusher from './WPPusher/WPPusher';
+import Resolute from './Resolute/Resolute';
 
 const RouteLayout = styled.div`
   display: grid;
@@ -26,6 +27,8 @@ function renderCurrentView(store) {
   switch (view.name) {
     case 'wppusher':
       return <WPPusher view={view} store={store} />;
+    case 'resolute':
+      return <Resolute view={view} store={store} />;
     default:
       return <Home view={view} store={store} />;
   }
@@ -36,7 +39,7 @@ const App = observer(({ store }) => <div>{renderCurrentView(store)}</div>);
 const Home = ({ view, store }) => (
   <RouteLayout>
     <StyledCard onClick={store.showWPPusher}>WP Pusher Design</StyledCard>
-    <StyledCard>Another Design</StyledCard>
+    <StyledCard onClick={store.showResolute}>Resolute</StyledCard>
     <StyledCard>Yet Another Design</StyledCard>
   </RouteLayout>
 );

@@ -67,3 +67,18 @@ Yay!! I finally finished the WPPusher. That means I restructured the folders, ad
 I also started to read about options to deploy the site alongside the storybook (have some ideas) but I think that first I'll complete all 3 sites and deploy it all as a finished piece.
 
 p.s. (note-to-self) I should think about fixing up the readme file soon
+
+### June 11th
+Started to work on resolute. Added the routing and thought to work systematically, starting with the theme and moving up. This is a bit annoying so I think I'll start with the layout and incrementally add colors.
+I almost managed to finish the header . Tried to stay clean and tidy but vscode / my comp is starting to freak out so I'll stop.
+
+### October 4th
+After a long stop I decided to get back to coding this project!
+At first i thought to try and implement my routing and architecture plan but I think i have enough experiments going on.
+I finally decided to simply finish the header and sidebar as planned. 
+
+Next:
+- clean up both component and make better separation - ui / domain.
+- move all stubs to store and have a dedicated resolute store.
+- separate app / layout from the properties domain and start implementing it (with it's dedicated store).
+- flow idea: get necessary assets from design, make stubs and store that serves it, storybook from page down to atoms.

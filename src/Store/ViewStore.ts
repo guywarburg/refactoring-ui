@@ -22,6 +22,8 @@ class ViewStore {
     switch (this.currentView.name) {
       case 'wppusher':
         return '/wppusher';
+      case 'resolute':
+        return '/resolute';
       case 'home':
         return '/';
       default:
@@ -46,6 +48,12 @@ class ViewStore {
   @action showWPPusher = () => {
     this.currentView = {
       name: 'wppusher'
+    };
+  };
+
+  @action showResolute = () => {
+    this.currentView = {
+      name: 'resolute'
     };
   };
 }
